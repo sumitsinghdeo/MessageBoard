@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+// @import "~bootstrap/dist/css/bootstrap.min.css";
+// @import "~font-awesome/css/font-awesome.css";
+
+body {
+    
+    background: url('/assets/msgnew.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+     
+    
+}
+md-card{
+    margin-top:8px;
+}
+

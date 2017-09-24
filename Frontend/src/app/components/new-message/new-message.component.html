@@ -1,0 +1,24 @@
+<!-- <div class="new-message">
+  <md-card> 
+    <md-card-content>
+      <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+      <md-input-container>
+        <textarea mdInput [(ngModel)]="message.text" placeholder="Message" ngModel name="message"></textarea>
+      </md-input-container>
+      <md-card-actions>
+        <button md-button color="primary">POST</button>
+      </md-card-actions>
+      </form>
+    </md-card-content>
+  </md-card>
+</div> -->
+<nav class="navbar navbar-default navbar-fixed-bottom" >
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+      <div class="form-group">
+          <div class="col-lg-8">
+            <textarea class="form-control" rows="3" [(ngModel)]="message.text" placeholder="Message" ngModel name="message"></textarea>
+            </div>
+            <button class="post">POST</button>
+        </div>
+  </form>
+</nav>

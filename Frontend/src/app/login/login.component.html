@@ -1,0 +1,35 @@
+<md-card>
+    <h2 class="form-signin-heading">Please sign in</h2>
+  <md-input-container >
+    <input mdInput [(ngModel)]="loginData.email" placeholder="Email">
+  </md-input-container>
+  <br>
+  <md-input-container>
+    <input type="password" mdInput [(ngModel)]="loginData.password" placeholder="Password">
+  </md-input-container>
+  <br>
+  <button md-raised-button color="primary" (click)="login()">Login</button>
+<h4 class="vailid" *ngIf="valid()">Invalid credentials</h4>
+</md-card>
+
+<!-- <div class="container">
+    
+          <form class="form-signin">
+            
+            <h2 class="form-signin-heading">Please sign in</h2>
+            
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="email" class="form-control" [(ngModel)]="loginData.email" placeholder="Email" required autofocus>
+          
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" [(ngModel)]="loginData.password" placeholder="Password" required>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+          
+            <button class="btn btn-lg btn-primary btn-block" (click)="login()" type="submit">Sign in</button>
+          </form>
+    
+        </div> -->
